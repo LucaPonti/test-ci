@@ -22,6 +22,7 @@ jobs:
 
     - name: Install deps and perform unit tests
       run: |
+        set -euo pipefail
         pip install -r requirements-dev.txt
         pytest test/
 
